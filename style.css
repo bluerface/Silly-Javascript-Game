@@ -5,17 +5,18 @@
   padding:0;
   margin:0;
   border:0;
+  display: block;
 }
 
 .map table td {
-  border: 1px;
-  border-style: solid;
+  /*border: 1px;*/
+  /*border-style: solid;*/
 }
 
 #player {
   position: relative;
-  left: -32px;
-  top: 0px;
+  left: 0;
+  top: -32px;
   z-index: +1;
-  margin-right: -32px;
+  margin-bottom: -32px;
 }

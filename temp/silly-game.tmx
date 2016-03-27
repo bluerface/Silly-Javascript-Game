@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" source="desert.tsx"/>
+ <tileset firstgid="49" name="Walls" tilewidth="32" tileheight="32" tilecount="2" columns="2">
+  <image source="Walls.png" trans="ffffff" width="64" height="32"/>
+ </tileset>
+ <layer name="Ground" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztmNkOgjAQRas+uCXgkohLRBQX3Pn/r3OINJBJA6XScTQ8nEiTkh7vjDDRF0L4FnEAFxhZPseEh8Jvw8DrV/JLspoBHjBn4KOiBbSBDvK2cdYCWFZgBfSBATAkyGIL7CoQWvSLCvz2wAU4lPiNvpRfqJmnzfwkR4Z+MfLCfjfx7v87sR/uObwuywv3ZR1+qt9BhPKT106JH861rvxOaC19quZnu77YE3NO66fLtQa/bkpPZO+iIjqa+yTrD/1ckc0X8rsWMdTcp7rPxM8T2XwxBiYlTDX3qe6z2XvUBEI953DyDAh9TGYzCq9H+qnz7My/f8KaztdFxy9xitO9lH5Phn64r7n5mdQ3P19Q+T0r+OEsueWnqjVnP8r8TGYzSr9/IWDg8CvgrLj9N9jUuKHhM14Y0rep
+  </data>
+ </layer>
+ <layer name="Walls" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1NEJACAIBcBmav/hmqFMC7kD/4L3kHAM4IZ5MNX9Mt9HVeft6rY//WJ53f5rdd6Lfj/fZwAAACDHAvtOB9E=
+  </data>
+ </layer>
+</map>
