@@ -1,0 +1,21 @@
+
+.map table, .map table tbody, .map table tr, .map table td, .map table img {
+  position: static;
+  border-collapse:collapse;
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+.map table td {
+  border: 1px;
+  border-style: solid;
+}
+
+#player {
+  position: relative;
+  left: -32px;
+  top: 0px;
+  z-index: +1;
+  margin-right: -32px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>A function is triggered when the user is pressing a key in the input field.</p>
+
+<div id = "demo">
+</div>
+
+<script>
+window.onkeydown = function(e)
+{
+    var evt = e ? e:event;
+    switch(evt.keyCode){
+        case 37: //left
+            playerX -= 1;
+            break;
+        case 38: //up
+            playerY -= 1;
+            break;
+        case 39: //right
+            playerX += 1;
+            break;
+        case 40: //down
+            playerY += 1;
+            break;
+        default:
+            return;
+        }
+drawMapView()
+}
+</script>
+
+</body>
+</html>
