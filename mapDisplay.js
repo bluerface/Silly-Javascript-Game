@@ -1,4 +1,4 @@
-
+var snakKillCount = 0;
 
 var playerX = 20;
 var playerY = 20;
@@ -22,6 +22,16 @@ function drawMap()
   document.getElementById('map-table').innerHTML = mapTable;
 }
 
+function getEventImage(x,y)
+{
+    switch (tiles[y][x].events)
+    {
+      case "snak":
+        return '<img class="enemy" src="images/snak.png">'
+      default:
+        return ""
+    }
+}
 
 function drawMapView()
 {
@@ -34,12 +44,13 @@ function drawMapView()
     mapTable += "<tr>";
     for (var x = centerX - width; x <= centerX + width; x++)
     {
-      mapTable += '<td id="t' + x + y + '"> <img src="images/desert_' + tiles[y][x].img +'.png"> </td>'
+      mapTable += '<td id="t' + x + y + '"> <img src="images/desert_' + tiles[y][x].img +'.png">' + getEventImage(x,y) + '</td>';
     }
     mapTable += "</tr>";
   }
   //txt = "<tr><td> Hello Loosers</td> </tr>";
   document.getElementById('map-table').innerHTML = mapTable;
+  document.getElementById('kill-count').innerHTML = "You have killed " + snakKillCount + " snaks!"
 }
 
 

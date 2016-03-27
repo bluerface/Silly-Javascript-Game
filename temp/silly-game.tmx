@@ -4,14 +4,22 @@
  <tileset firstgid="49" name="Walls" tilewidth="32" tileheight="32" tilecount="2" columns="2">
   <image source="Walls.png" trans="ffffff" width="64" height="32"/>
  </tileset>
+ <tileset firstgid="51" name="Snak" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="../images/snak.png" trans="ffffff" width="32" height="32"/>
+ </tileset>
  <layer name="Ground" width="40" height="40">
   <data encoding="base64" compression="zlib">
-   eJztmNkOgjAQRas+uCXgkohLRBQX3Pn/r3OINJBJA6XScTQ8nEiTkh7vjDDRF0L4FnEAFxhZPseEh8Jvw8DrV/JLspoBHjBn4KOiBbSBDvK2cdYCWFZgBfSBATAkyGIL7CoQWvSLCvz2wAU4lPiNvpRfqJmnzfwkR4Z+MfLCfjfx7v87sR/uObwuywv3ZR1+qt9BhPKT106JH861rvxOaC19quZnu77YE3NO66fLtQa/bkpPZO+iIjqa+yTrD/1ckc0X8rsWMdTcp7rPxM8T2XwxBiYlTDX3qe6z2XvUBEI953DyDAh9TGYzCq9H+qnz7My/f8KaztdFxy9xitO9lH5Phn64r7n5mdQ3P19Q+T0r+OEsueWnqjVnP8r8TGYzSr9/IWDg8CvgrLj9N9jUuKHhM14Y0rep
+   eJztmNkOgjAQRas+uCXgkrhGRHFf+f+vc4w0mElDB6TjaHg4AZKSHm4HOiFQSgUO8QAf6Dmepwg3g99SgNev5PfMagSMgYkAHxM1oA40kLeLuabALAdzoA10gC5DFitgnYPIod8hw28DnICtxa/3pfwiYp4u89PsBPrFyAv7XdSr/q/Mfrjm8LUtL1yXZfiZ3oMDyk+fexY/nGtZ+e3RtfbJm5/r9cWemGOyflTOJfg1E1oq3YuyaBDHaRYf+vkq7S/0s2bRJY4z3VfEb6zS/qIPDCwMieNM97msPW5CZe5zJHmGjD5FejMOr1typHw73/efqKT5qdj2Hv09j5Nn4fS7E/Pj9MN1Lc0PQ/F77y+4/O45/HCW0vIzrbVkP878ivRmnH7/QijA4VfAWUn7N1itcUXFZzwASru3lg==
   </data>
  </layer>
  <layer name="Walls" width="40" height="40">
   <data encoding="base64" compression="zlib">
-   eJzt1NEJACAIBcBmav/hmqFMC7kD/4L3kHAM4IZ5MNX9Mt9HVeft6rY//WJ53f5rdd6Lfj/fZwAAACDHAvtOB9E=
+   eJzt1EEKACAIRFHP1P0P17ZlNaWD/AfRRnCINALAC+PiZOf7Wa/K7neq2/uRT+vX7b9m96vI57yfAfzhPvs7/cZyO+6mynzu79cln/N8KPUq8mnc9zMAoJcJoE8R+Q==
+  </data>
+ </layer>
+ <layer name="Events" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1kEKACAIBMDeZP//W9cICrooxQzsXRYRWwNgJ6oHuBRL+hTy6Bs4cSP+9NrPUMHuAwCQbQDuoAJf
   </data>
  </layer>
 </map>

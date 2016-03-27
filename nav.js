@@ -50,10 +50,24 @@ function goDown() {
       yOff += 1;
   }
 }
-function isEmpty(x,y) {
+function noWall(x,y) {
   if (x >= 0 && y>= 0 && x<mapWidth && y<mapHeight)
     return !tiles[y][x].wall
 
+}
+function eventCheck(x,y){
+  switch(tiles[y][x].events)
+  {
+    case "snak":
+      alert("You encountered a Snak!  You defeated it, thank goodness")
+      tiles[y][x].events = 0;
+      tiles[Math.floor(Math.random() * mapHeight)][Math.floor(Math.random() * mapHeight)].events = "snak"
+      snakKillCount += 1
+      break;
+    case "trap":
+      alert("ITS A TRAP!  Luckily you get out of it, but be careful its still there")
+      break;
+  }
 }
 
 window.onkeydown = function(e)
@@ -61,19 +75,23 @@ window.onkeydown = function(e)
     var evt = e ? e:event;
     switch(evt.keyCode){
         case 37: //left
-            if(isEmpty(playerX-1, playerY))
+            eventCheck(playerX-1, playerY);
+            if(noWall(playerX-1, playerY))
               goLeft();
             break;
         case 38: //up
-            if(isEmpty(playerX, playerY-1))
+            eventCheck(playerX, playerY-1);
+            if(noWall(playerX, playerY-1))
               goUp();
             break;
         case 39: //right
-            if(isEmpty(playerX+1, playerY))
+            eventCheck(playerX+1, playerY);
+            if(noWall(playerX+1, playerY))
               goRight();
             break;
         case 40: //down
-            if(isEmpty(playerX, playerY+1))
+            eventCheck(playerX, playerY+1);
+            if(noWall(playerX, playerY+1))
               goDown();
             break;
         default:

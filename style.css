@@ -1,6 +1,6 @@
 
 .map table, .map table tbody, .map table tr, .map table td, .map table img {
-  position: static;
+  /*position: static;*/
   border-collapse:collapse;
   padding:0;
   margin:0;
@@ -14,6 +14,14 @@
 }
 
 #player {
+  position: relative;
+  left: 0;
+  top: -32px;
+  z-index: +2;
+  margin-bottom: -32px;
+}
+
+.map .enemy {
   position: relative;
   left: 0;
   top: -32px;
