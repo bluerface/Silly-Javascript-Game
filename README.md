@@ -1,8 +1,8 @@
 # Silly-Javascript-Game
-Made a wee browser game.  All JavaScript, no JQuery.  Used tiler to produce the map, used the default map and images.
+FOr kill the snaks. And for the funs, to see if I could.
 
-The objective is too kill *all* the snaks.
+Beware the snaks in the dessert.  They have laid traps. 
 
-The game was working in Chrome back when I finished it, but not in Firefox, due to blairs haxy table css.  
-It would seem chrome have made an update that makes the terrible css in question break in chrome too.
-Gonna just go fix that
+Map created using tiler using the default assets.  Game is html, css and javascript. Appologies for using the inbuilt browser dialogue box, its easier to play if you use spacebar to dismiss it.  Dont get too addicted, my brother Jake got a score of 123 snaks! 
+
+I have now fixed the css issues the game had previously, and as of today 29/7/16, it is working on the current releases of chrome and firefox :).  
