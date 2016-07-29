@@ -53,20 +53,23 @@ function goDown() {
 function noWall(x,y) {
   if (x >= 0 && y>= 0 && x<mapWidth && y<mapHeight)
     return !tiles[y][x].wall
-
 }
+
 function eventCheck(x,y){
-  switch(tiles[y][x].events)
+  if (x >= 0 && y>= 0 && x<mapWidth && y<mapHeight)
   {
-    case "snak":
-      alert("You encountered a Snak!  You defeated it, thank goodness")
-      tiles[y][x].events = 0;
-      tiles[Math.floor(Math.random() * mapHeight)][Math.floor(Math.random() * mapHeight)].events = "snak"
-      snakKillCount += 1
-      break;
-    case "trap":
-      alert("ITS A TRAP!  Luckily you get out of it, but be careful its still there")
-      break;
+    switch(tiles[y][x].events)
+    {
+      case "snak":
+        alert("You encountered a Snak!  You defeated it, thank goodness")
+        tiles[y][x].events = 0;
+        tiles[Math.floor(Math.random() * mapHeight)][Math.floor(Math.random() * mapHeight)].events = "snak"
+        snakKillCount += 1
+        break;
+      case "trap":
+        alert("ITS A TRAP!  Luckily you get out of it, but be careful its still there")
+        break;
+    }
   }
 }
 
