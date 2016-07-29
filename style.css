@@ -1,30 +1,23 @@
-
-.map table, .map table tbody, .map table tr, .map table td, .map table img {
-  /*position: static;*/
-  border-collapse:collapse;
-  padding:0;
-  margin:0;
-  border:0;
-  display: block;
+.map table {
+  border-collapse: collapse;
 }
 
-.map table td {
-  /*border: 1px;*/
-  /*border-style: solid;*/
+.map td {
+  padding: 0;
 }
 
 #player {
   position: relative;
-  left: 0;
-  top: -32px;
+  left: -32px;
+  top: 0;
   z-index: +2;
-  margin-bottom: -32px;
+  margin-right: -32px;
 }
 
-.map .enemy {
+.enemy {
   position: relative;
-  left: 0;
-  top: -32px;
+  left: -32px;
+  top: 0;
   z-index: +1;
-  margin-bottom: -32px;
+  margin-right: -32px;
 }
